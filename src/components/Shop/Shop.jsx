@@ -4,6 +4,8 @@ import './Shop.css'
 
 const Shop = () => {
     const [products , setProducts] = useState([]);
+    const [cart , setCart] = useState([]);
+
 
     useEffect( () => {
         fetch('products.json')
@@ -11,6 +13,12 @@ const Shop = () => {
             .then(data => setProducts(data))
     },[]);
 
+    const handleAddToCart = (product) =>{
+        let newCart = [...cart, product];
+        setCart(newCart);
+
+        
+    }
        
     return (
         <section className='shop-wrapper'>
@@ -18,12 +26,10 @@ const Shop = () => {
                 <div className="shop-area">
                     <div className="product-row">
                        {
-                         products.map(product => console.log(product))
-                       }
-                       {
                         products.map(product => <Product 
                             product={product}
                             key={product.id}
+                            handleAddToCart={handleAddToCart}
                             
                             ></Product>)
                        }
@@ -31,6 +37,7 @@ const Shop = () => {
                 </div>
                 <div className="sidebar-area">
                     <h3>Order Summary</h3>
+                    <p><b>Total Product: </b>{cart.length}</p>
                 </div>
             </div>
         </section>
