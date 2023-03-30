@@ -1,0 +1,32 @@
+
+.single-product-item {
+    border: 1px solid #95A0A7;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.product-header {
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.single-product-item img {
+    border-radius: 10px;
+    margin: 0 -5px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.product-header h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.manufacturin {
+    margin-top: 30px;
+}

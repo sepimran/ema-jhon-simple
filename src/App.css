@@ -61,3 +61,7 @@
 .col-lg-9 {
   width: 67%;
 }
+
+* {
+  box-sizing: border-box;
+}

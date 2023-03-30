@@ -1,0 +1,29 @@
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar-area {
+    width: 265px;
+    height: 100vh;
+    background: #FFE0B3;
+    padding: 20px;
+}
+
+.shop-area {
+
+    width: calc(100% - 265px);
+}
+
+.sidebar-area h3 {
+    text-align: center;
+}
+
+.shop-area .product-row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 50px 0;
+}
