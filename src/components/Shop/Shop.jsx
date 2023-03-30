@@ -23,6 +23,7 @@ const Shop = () => {
                        {
                         products.map(product => <Product 
                             product={product}
+                            key={product.id}
                             
                             ></Product>)
                        }

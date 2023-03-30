@@ -2,6 +2,7 @@
 .single-product-item {
     border: 1px solid #95A0A7;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 img{
@@ -9,16 +10,14 @@ img{
 }
 
 .product-header {
-    padding: 10px;
+    padding: 6px;
     border-radius: 15px;
     overflow: hidden;
 }
 
 .single-product-item img {
     border-radius: 10px;
-    margin: 0 -5px;
-    margin-top: -5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px
 }
 
 .product-header h3 {
@@ -29,4 +28,33 @@ img{
 
 .manufacturin {
     margin-top: 30px;
+}
+
+.add-to-cart-btn-area button {
+    width: 100%;
+    background: #FFE0B3;
+    border-radius: 0 0 10px 10px;
+    margin-top: 15px;
+    outline: none;
+    border: 0;
+    border-top: 1px solid #95A0A7;
+}
+
+.add-to-cart-btn-area button:hover {
+    outline: none;
+    box-shadow: none;
+    background: #fbd7a3;
+    border: 0;
+      border-top: 1px solid #95A0A7;
+}
+
+.add-to-cart-btn-area {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.single-product-item {
+    position: relative;
+    padding-bottom: 50px;
 }

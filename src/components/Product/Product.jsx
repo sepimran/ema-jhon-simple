@@ -2,7 +2,7 @@ import React from 'react';
 import './Product.css';
 
 const Product = (props) => {
-    const {name, img,price,seller,ratings } = props.product
+    const {name, img,price,seller,ratings } = props.product;
     return (
         <div className='single-product-item'>
             <div className="product-header">
@@ -14,6 +14,11 @@ const Product = (props) => {
                     <p>Manufacturer : {seller}</p>
                     <p>Rating : {ratings}</p>
                 </div>
+            </div>
+            <div className="add-to-cart-btn-area">
+                <button>
+                    Add to cart
+                </button>
             </div>
            
         </div>
