@@ -27,3 +27,8 @@
     gap: 40px;
     padding: 50px 30px;
 }
+
+.sidebar-area {
+    position: sticky;
+    top: 0;
+}
