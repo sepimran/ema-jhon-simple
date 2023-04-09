@@ -1,0 +1,65 @@
+.shop-area .order-review-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.single-product-review-item {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    min-height: 91px;
+    align-items: center;
+    border: 1px solid #BDC3C8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.single-product-review-item .spr-img {
+    width: 91px;
+    height: 91px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.single-product-review-item {}
+
+.single-product-review-item .spr-btn {
+    width: 91px;
+    height: 91px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-product-review-item .spr-content {
+    width: calc(100% - 182px);
+    padding: 0 10px;
+}
+
+.single-product-review-item .spr-btn button {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    background: #F9CDCD;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    transition: .3s all;
+    
+}
+
+.single-product-review-item .spr-btn button:hover {
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    background: #e9a6a6;
+}
+
+span.orange {
+    color: #FF9900;
+}
