@@ -3,7 +3,7 @@ import Cart from '../Cart/Cart';
 import { useLoaderData } from 'react-router-dom';
 import './Order.css'
 import ReviewItem from '../ReviewItem/ReviewItem';
-import { removeFromDb } from '../../utilities/fakedb';
+import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
 
 const Orders = () => {
     const savedCart = useLoaderData();
@@ -14,6 +14,11 @@ const Orders = () => {
        setCart(remainCart);
        removeFromDb(id);
     }
+
+    const clearCart = () => {
+        setCart([]);
+        deleteShoppingCart();
+    };
  
     return (
         <section className='shop-wrapper'>
@@ -31,7 +36,10 @@ const Orders = () => {
                     </div>
                 </div>
                 <div className="sidebar-area">
-                    <Cart cart={cart}></Cart>
+                    <Cart 
+                        cart={cart}
+                        clearCart={clearCart}
+                    ></Cart>
             
                 </div>
             </div>

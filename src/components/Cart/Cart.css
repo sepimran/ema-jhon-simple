@@ -1,0 +1,48 @@
+button.boxed-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 20px;
+    color: #fff;
+    outline: none;
+    transition: .3s all;
+    border: 0;
+}
+
+button.boxed-btn:hover {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    opacity: .8;
+}
+
+.bg-red{
+    background-color: #FF3030;
+}
+
+button.boxed-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px 20px;
+    color: #fff;
+    outline: none;
+    transition: .3s all;
+    border: 0;
+}
+
+button.boxed-btn:hover {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+}
+
+.sidebar-area h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar-area p {
+    margin-bottom: 20px;
+}
+
+.btn-area{
+    margin-top: 30px;
+}
