@@ -19,6 +19,10 @@ button.boxed-btn:hover {
     background-color: #FF3030;
 }
 
+.bg-orange{
+    background-color: #FF9900;
+}
+
 button.boxed-btn {
     width: 100%;
     margin-top: 20px;
@@ -27,6 +31,13 @@ button.boxed-btn {
     outline: none;
     transition: .3s all;
     border: 0;
+}
+
+button.boxed-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 button.boxed-btn:hover {

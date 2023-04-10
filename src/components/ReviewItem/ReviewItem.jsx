@@ -1,5 +1,6 @@
 import React from 'react';
-import iconDelete from '../../images/trash-alt.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart , faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 const ReviewItem = ({product , handleRemoveFromCart}) => {
    const {name , price , shipping ,quantity ,img  ,id } = product ;
@@ -16,7 +17,7 @@ const ReviewItem = ({product , handleRemoveFromCart}) => {
                 <p>Quantyty : <span className="orange">{quantity}</span> </p>
             </div>
             <div className="spr-btn">
-                <button onClick={ () => handleRemoveFromCart(id)}><img src={iconDelete} /></button>
+                <button onClick={ () => handleRemoveFromCart(id)}><FontAwesomeIcon icon={faTrashAlt}/></button>
             </div>
         </div>
     );
