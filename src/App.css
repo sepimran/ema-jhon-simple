@@ -65,3 +65,91 @@
 * {
   box-sizing: border-box;
 }
+
+
+.form-area {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #95A0A7;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: -6px 6px 0px #FFE0B3;
+}
+
+.main-wrap {
+  padding: 70px 0;
+}
+
+.form-area h2 {
+  text-align: center;
+}
+
+.form-control label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.form-control input[type="submit"] {
+  background: #FFE0B3;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+button.inline-btn {
+  color: blue;
+  padding: 0;
+  background: transparent;
+}
+
+.separator {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px dashed #937346;
+  border-bottom: 2px dashed  #8d6e42;
+  margin-top: 30px;
+}
+
+button.btn.boxed-btn {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+p.text-center {
+  text-align: center;
+}
+
+p.text-red {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+li.text-white {
+  margin-left: 30px;
+}
+
+li.text-white {
+  color: #70a9ff;
+}
+
+li.text-white span {
+  margin-left: 15px;
+}
+
+li.text-white a {
+    margin: 0 !IMPORTANT;
+}
